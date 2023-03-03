@@ -21,8 +21,8 @@ export class ProductItemDetailComponent implements OnInit {
   ) {}
   ngOnInit(): void {
     this.route.params.subscribe((res) => (this.id = res['id']));
-    this.pd.showComment(this.id).subscribe((res) => {
-      this.product = res[0];
+    this.pd.getComments().subscribe((res) => {
+      this.product = res.filter((p) => this.id == p.id)[0];
       console.log(this.product);
     });
   }
