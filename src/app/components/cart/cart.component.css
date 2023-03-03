@@ -1,0 +1,79 @@
+img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.form-margin {
+  margin-bottom: 12px;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.cart-panel {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.empty-cart-message {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  border: 2px grey solid;
+  padding: 6px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 3px;
+}
+form label {
+  color: rgb(72, 72, 72);
+}
+form p {
+  font-variant: normal;
+  color: grey;
+  font-size: 0.7em;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+form button {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(72, 72, 72);
+  color: white;
+  padding: 10px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.drop {
+  background-color: transparent;
+  border: none;
+  color: rgb(72, 72, 72);
+}
+.amount {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

@@ -1,0 +1,63 @@
+<div class="container">
+  <app-cart-list class="products"> </app-cart-list>
+  <div>
+    <form action="" #form="ngForm" (submit)="onsub()">
+      <label for=""
+        >Full Name: <br /><input
+          type="text"
+          required
+          minlength="3"
+          name="name"
+          [(ngModel)]="userAuth.name"
+          #full="ngModel" /></label
+      ><label for=""
+        ><br />
+        Address: <br /><input
+          type="text"
+          required
+          name="address"
+          minlength="6"
+          [(ngModel)]="userAuth.address"
+          #address="ngModel" /></label
+      ><label for=""
+        ><br />
+        Credit Card Number: <br /><input
+          type="text"
+          required
+          name="credit"
+          minlength="16"
+          maxlength="16"
+          [(ngModel)]="userAuth.credit"
+          #credit="ngModel"
+      /></label>
+      <div *ngIf="full.invalid && full.dirty">
+        <div *ngIf="full.errors!['required']">Please provide a Name</div>
+        <div *ngIf="full.errors!['minlength']">
+          your name must be longer than 3 characters
+        </div>
+      </div>
+      <div *ngIf="address.invalid && address.dirty">
+        <div *ngIf="address.errors!['required']">Please provide an address</div>
+        <div *ngIf="address.errors!['minlength']">
+          your name must be longer than 6 characters
+        </div>
+      </div>
+      <div *ngIf="credit.invalid && credit.dirty">
+        <div *ngIf="credit.errors!['required']">
+          Please provide a credit card information
+        </div>
+        <div *ngIf="credit.errors!['minlength']">
+          your CCI must be longer than 16 characters
+        </div>
+      </div>
+      <p>will never share your information</p>
+      <button
+        [disabled]="form.invalid"
+        [ngStyle]="{ opacity: form.invalid ? 0.5 : 1 }"
+        type="submit"
+      >
+        submit
+      </button>
+    </form>
+  </div>
+</div>

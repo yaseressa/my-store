@@ -1,0 +1,24 @@
+<ul>
+  <li>
+    <img [src]="product.url" alt="" class="product-image" />
+    <div class="detail-container">
+      <p>{{ product.description }}</p>
+    </div>
+  </li>
+  <li class="cont">
+    <div class="product-container">
+      <span>{{ product.name }}</span
+      ><span class="price">{{ product.price }}</span>
+    </div>
+    <div class="conf">
+      <select name="" id="" class="select-input" [(ngModel)]="amount">
+        <option value="">QTY</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <button (click)="addToCart()">Add to Cart</button>
+    </div>
+    <a routerLink="/" class="p">Products ></a>
+  </li>
+</ul>

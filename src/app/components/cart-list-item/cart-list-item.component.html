@@ -1,0 +1,16 @@
+<div class="cart-item">
+  <img [src]="product.url" alt="" />
+  <div class="cart-item-details">
+    <p>{{ product.name }}</p>
+    <p>{{ product.price }}</p>
+    <label for="" class="amount">
+      <input
+        class="number-input"
+        type="number"
+        [(ngModel)]="product.amount"
+        (ngModelChange)="changer()"
+      />
+      <button (click)="drop(product.id)" class="drop">drop</button>
+    </label>
+  </div>
+</div>

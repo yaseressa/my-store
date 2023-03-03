@@ -1,0 +1,11 @@
+<div *ngIf="cproducts.length == 0">
+  <p>empty cart</p>
+</div>
+<app-cart-list-item
+  *ngFor="let product of cproducts"
+  [product]="product"
+  (summer)="summer($event)"
+  (dropper)="drop(product.id)"
+>
+</app-cart-list-item>
+<h1>{{ sum }}</h1>
