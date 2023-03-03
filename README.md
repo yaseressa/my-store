@@ -1,6 +1,7 @@
 # Udacity My Store Project Overview
 
-Users of the MyStore single-page Angular application get a dynamic, rich online experience.
+MyStore is a single-page Angular application that provides users with a dynamic web experience.
+It provides a list of functions that users can use, such as:
 
 - View a list of the products
 - View individual product in detail
