@@ -22,7 +22,8 @@
       ><label for=""
         ><br />
         Credit Card Number: <br /><input
-          type="text"
+          type="number"
+          placeholder="enter 16 numbers"
           required
           name="credit"
           minlength="16"
@@ -49,6 +50,8 @@
         <div *ngIf="credit.errors!['minlength']">
           your CCI must be longer than 16 characters
         </div>
+
+        <div *ngIf="credit.errors!['type']">must consist only numbers</div>
       </div>
       <p>will never share your information</p>
       <button

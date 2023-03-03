@@ -21,6 +21,6 @@ export class ConfirmationComponent implements OnInit {
     this.user = { ...this.cr.getUser(), ccn: 'xxxxxxxxxxxxxxxxxxxxxxx' };
   }
   clicker() {
-    this.router.navigate(['/product']);
+    this.router.navigate(['/']);
   }
 }
