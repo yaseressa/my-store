@@ -7,7 +7,7 @@ It provides a list of functions that users can use, such as:
 - View individual product in detail
 - Add products to the cart
 - Update product quantity in the cart
-- Delete a product from the cart
+- Delete a product fom the cart
 - Checkout page
 
 ## Project setup
